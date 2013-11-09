@@ -8,6 +8,10 @@
       <th>Bank name</th>
       <th>Agency</th>
       <th>Account number</th>
+      <th>Manager</th>
+      <th>Phone</th>
+      <th>Other phone</th>
+      <th>Description</th>
       <th></th>
       <th></th>
       <th></th>
@@ -22,6 +26,10 @@
         <td><%= account.bank_name %></td>
         <td><%= account.agency %></td>
         <td><%= account.account_number %></td>
+        <td><%= account.manager %></td>
+        <td><%= account.phone %></td>
+        <td><%= account.other_phone %></td>
+        <td><%= account.description %></td>
         <td><%= link_to 'Show', account %></td>
         <td><%= link_to 'Edit', edit_account_path(account) %></td>
         <td><%= link_to 'Destroy', account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
