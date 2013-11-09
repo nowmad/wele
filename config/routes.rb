@@ -1,4 +1,13 @@
 Wele::Application.routes.draw do
+  resources :stakeholders
+
+  # get "/cost_centers" => "cost_centers#index"
+  # get "/cost_centersX/:id" => "cost_centers#show", as: :cost_center
+  # get "/cost_centers/:id" => "cost_centers#edit", as: :edit_cost_center
+  # get "/cost_center/" => "cost_centers#new", as: :new_cost_center
+
+  resources :cost_centers
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

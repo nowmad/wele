@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  is_client: false
+  is_supplier: false
+  description: MyText
+
+two:
+  name: MyString
+  is_client: false
+  is_supplier: false
+  description: MyText

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @stakeholder.name %>
+</p>
+
+<p>
+  <strong>Is client:</strong>
+  <%= @stakeholder.is_client %>
+</p>
+
+<p>
+  <strong>Is supplier:</strong>
+  <%= @stakeholder.is_supplier %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @stakeholder.description %>
+</p>
+
+<%= link_to 'Edit', edit_stakeholder_path(@stakeholder) %> |
+<%= link_to 'Back', stakeholders_path %>
