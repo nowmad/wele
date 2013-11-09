@@ -1,4 +1,6 @@
 Wele::Application.routes.draw do
+  resources :accounts
+
   resources :stakeholders
 
   # get "/cost_centers" => "cost_centers#index"
