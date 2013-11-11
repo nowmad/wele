@@ -7,6 +7,7 @@
       <th>Is client</th>
       <th>Is supplier</th>
       <th>Description</th>
+      <th>Status</th>
       <th></th>
       <th></th>
       <th></th>
@@ -20,6 +21,7 @@
         <td><%= stakeholder.is_client %></td>
         <td><%= stakeholder.is_supplier %></td>
         <td><%= stakeholder.description %></td>
+        <td><%= stakeholder.status %></td>
         <td><%= link_to 'Show', stakeholder %></td>
         <td><%= link_to 'Edit', edit_stakeholder_path(stakeholder) %></td>
         <td><%= link_to 'Destroy', stakeholder, method: :delete, data: { confirm: 'Are you sure?' } %></td>
