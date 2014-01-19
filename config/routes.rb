@@ -1,4 +1,10 @@
 Wele::Application.routes.draw do
+  resources :forecasts
+
+  resources :payments
+
+  resources :categories
+
   resources :accounts
 
   resources :stakeholders

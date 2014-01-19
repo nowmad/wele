@@ -38,7 +38,16 @@ group :doc do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-rails', '~> 3.0.0.beta'
+end
+
+group :development do
+  gem 'guard-bundler'
+  gem 'guard-rspec', require: false
+  gem 'guard-livereload', require: false
+  gem 'foreman'
+  gem 'rack-livereload'
+  gem 'rb-fsevent', require: false
 end
 
 # Use ActiveModel has_secure_password

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @forecast.category_id %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @forecast.year %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @forecast.month %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @forecast.value %>
+</p>
+
+<%= link_to 'Edit', edit_forecast_path(@forecast) %> |
+<%= link_to 'Back', forecasts_path %>

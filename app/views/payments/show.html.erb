@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @payment.name %>
+</p>
+
+<p>
+  <strong>Stakeholder:</strong>
+  <%= @payment.stakeholder_id %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @payment.description %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @payment.category_id %>
+</p>
+
+<p>
+  <strong>Payday:</strong>
+  <%= @payment.payday %>
+</p>
+
+<p>
+  <strong>Forecast date:</strong>
+  <%= @payment.forecast_date %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @payment.status %>
+</p>
+
+<p>
+  <strong>Cost center:</strong>
+  <%= @payment.cost_center_id %>
+</p>
+
+<p>
+  <strong>Account:</strong>
+  <%= @payment.account_id %>
+</p>
+
+<%= link_to 'Edit', edit_payment_path(@payment) %> |
+<%= link_to 'Back', payments_path %>

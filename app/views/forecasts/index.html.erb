@@ -1,0 +1,33 @@
+<h1>Listing forecasts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Year</th>
+      <th>Month</th>
+      <th>Value</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @forecasts.each do |forecast| %>
+      <tr>
+        <td><%= forecast.category_id %></td>
+        <td><%= forecast.year %></td>
+        <td><%= forecast.month %></td>
+        <td><%= forecast.value %></td>
+        <td><%= link_to 'Show', forecast %></td>
+        <td><%= link_to 'Edit', edit_forecast_path(forecast) %></td>
+        <td><%= link_to 'Destroy', forecast, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Forecast', new_forecast_path %>
